@@ -84,7 +84,7 @@ const toggle = async (Id) => {
       <h2>Live Event feed</h2>
       <ul>
         {history.map((entry) => (
-          <li key={entry.doorId}> : {entry.timeStamp}: {entry.newStatus === 0 ? "Unlocked" : "Locked"}</li>
+          <li key={entry.doorId}>Door {entry.doorId} : {entry.timeStamp}: {entry.newStatus === 0 ? "Unlocked" : "Locked"}</li>
         ))}
       </ul>
     </div>
